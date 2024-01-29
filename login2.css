@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v30_287 {
+  /*background*/
+  width: 100%;
+  height: 729px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v30_288 {
+  /*purple backdrop*/
+  width: 100%;
+  height: 100%;
+  background: rgba(59,54,173,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v30_289 {
+  /*white backdrop*/
+  width: 578px;
+  height: 690px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 836px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v30_291 {
+  /**/
+  width: 154px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 321px;
+  left: 1048px;
+  font-family: Urbanist;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v30_293 {
+  /*enter otp*/
+  width: 175px;
+  color: rgba(0,0,0,0.800000011920929);
+  position: absolute;
+  top: 375px;
+  left: 1035px;
+  font-family: Urbanist;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.v30_300 {
+  /*circle above login*/
+  width: 50px;
+  height: 50px;
+  background: rgba(59,54,173,1);
+  opacity: 1;
+  position: absolute;
+  top: 55px;
+  left: 1100px;
+  border-radius: 50%;
+}
+.v30_301 {
+  /*inner circle*/
+  width: 30px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 65px;
+  left: 1110px;
+  border-radius: 50%;
+}
+.v41_472 {
+  /*login*/
+  width: 156px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 140px;
+  left: 1047px;
+  font-family: Urbanist;
+  font-weight: Bold;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.v41_473 {
+  /**/
+  width: 400px;
+  height: 60px;
+  background: rgba(59,54,173,1);
+  opacity: 1;
+  position: absolute;
+  top: 523px;
+  left: 925px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+  cursor:pointer;
+}
+.v41_474 {
+  /**/
+  width: 54px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 541px;
+  left: 1098px;
+  font-family: Urbanist;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v41_627 {
+  /*submit button*/
+  width: 400px;
+  height: 60px;
+  background: rgba(59,54,173,1);
+  opacity: 1;
+  position: absolute;
+  top: 523px;
+  left: 925px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  font-family: Urbanist;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v51_719 {
+  /*image*/
+  width: 600px;
+  height: 600px;
+  background: url("../images/v51_720.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 85px;
+  left: 119px;
+  overflow: hidden;
+}
+.message{
+  /*error_message*/
+  color: #f75746; 
+  width: 250px;
+  position: absolute;
+  top: 425px;
+  left: 1000px;
+  font-family: Urbanist;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.mail_msg{
+  /*msg*/
+  color: #0a0a0a; 
+  width: 400px;
+  position: absolute;
+  top: 285px;
+  left: 925px;
+  font-family: Urbanist;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}

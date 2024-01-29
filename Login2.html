@@ -1,0 +1,39 @@
+<!-- Login2.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Urbanist&display=swap" rel="stylesheet" />
+        <link href="../static/css/Login2.css" rel="stylesheet" />
+        <title>OTP</title>
+    </head>
+    <body>
+        <div class="v30_287">
+            
+            <form id="Verify-OTP" action="{{url_for("verify_otp")}}" method="post" onsubmit="return redirectToverifyOTP()">
+               
+            <div class="v30_288"></div>
+            <div class="v30_289"></div>
+            {% if msg %}
+                <p class="mail_msg">{{ msg }}</p>
+                {% endif %}
+            <input type="text" name = OTP class="v30_293" placeholder="Enter OTP" required>
+            <div class="name"></div>
+            <div class="v30_300"></div>
+            <div class="v30_301"></div>
+                {% if error_message %}
+                <p class="message">{{ error_message }}</p>
+                {% endif %}
+            <span class="v41_472">Login</span>
+            <div class="v41_473"></div>
+            <input type = "submit" class="v41_627" value="Submit">
+            <div class="v51_719"></div>
+            
+        </div>
+    </form>
+        <script>
+            function redirectToverifyOTP() {
+                window.location.href = '/verify_otp';
+            }
+        </script>
+    </body>
+    </html>

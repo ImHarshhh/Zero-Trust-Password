@@ -1,0 +1,45 @@
+<!-- signup_add.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Urbanist&display=swap" rel="stylesheet" />
+        <link href="../static/css/signup_add.css" rel="stylesheet" />
+        
+        <title>SignUp</title>
+    </head>
+    <body>
+
+        <div class="v15_27">
+            <form id="signup-form" action="{{url_for("submit_signupform")}}" method="post" onsubmit="return redirectToPassword()">
+                <div class="v15_31"></div>
+                <div class="v15_32"></div>
+                <span class="v15_35">Sign up</span>
+                <span class="v15_36">Additional details</span>
+                <input type ="text" name="spouse-name" class="v36_460" placeholder = "Spouse Name">
+                <span class = "v36_463">Anniversary:</span>
+                <input type="date" name = doa class="v36_464">
+                <span class="v48_641">Spouse DOB:</span>
+                <input type="date" name = spouse-dob class="spouse_dob">
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="v15_45"></div>
+            <input type ="submit" class="v15_45"  value = "Submit" >
+            <div class="v19_66"></div>
+            <div class="v19_68"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="v51_652"></div>
+
+        </form>
+        <script>
+            function redirectToPassword() {
+                window.location.href = '/password_checker_signup';
+            }
+        </script>
+        </div>
+    </body>
+    </html>

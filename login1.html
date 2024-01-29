@@ -1,0 +1,35 @@
+<!-- login1.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Urbanist&display=swap" rel="stylesheet" />
+        <link href="../static/css/login1.css" rel="stylesheet" />
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="v30_84">
+            <form id="send-OTP" action="{{url_for("send_OTP")}}" method="post" onsubmit="redirectTosendOTP()">
+            <div class="v30_85"></div>
+            <div class="v30_86"></div>
+            <span class="v30_88">Login</span>
+            <span class="v30_90">Mobile Number</span>
+                {% if error_message %}
+                <p class="message">{{ error_message }}</p>
+                {% endif %}
+            <input type="tel" name = mobile class="v30_90" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+            <div class="name"></div>
+            <div class="v30_97"></div>
+            <input type="submit" class="v30_99" value ="Send OTP">
+            <div class="v30_102"></div>
+            <div class="v30_103"></div>
+            <div class="v51_720"></div>
+            
+        </div>
+    </form>
+        <script>
+            function redirectTosendOTP() {
+                window.location.href = '/send_OTP';
+            }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,108 @@
+<!-- signup1.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Urbanist&display=swap" rel="stylesheet" />
+        <link href="../static/css/signup1.css" rel="stylesheet" />
+        <script>
+            function validateAndSignup() {
+                var emailInput = document.getElementsByName("email")[0].value;
+                var validEmail = validateEmailFormat(emailInput);
+
+                if (validEmail) {
+                    return true;  // Allow form submission
+                } else {
+                    alert("Invalid email format. Please enter a valid email address.");
+                    return false;  // Prevent form submission
+                }
+            }
+
+            function redirectToPassword() {
+                window.location.href = '/password_checker_signup';
+            }
+            function validateEmailFormat(email) {
+    // Your email verification logic in JavaScript
+    var emailCheck1 = ["gmail", "hotmail", "yahoo", "outlook"];
+    var emailCheck2 = [".com", ".in", ".org", ".edu", ".co.in"];
+
+    var count = 0;
+
+    for (var i = 0; i < emailCheck1.length; i++) {
+        if (email.includes(emailCheck1[i])) {
+            count += 1;
+        }
+    }
+
+    for (var j = 0; j < emailCheck2.length; j++) {
+        if (email.includes(emailCheck2[j])) {
+            count += 1;
+        }
+    }
+
+    if (!email.includes("@") || count !== 2) {
+        return false;
+    }
+    return true;
+}
+        </script>
+        <title>SignUp</title>
+    </head>
+    <body>
+        {% if error_message %}
+        <div style="color: red;">{{ error_message }}</div>
+        {% endif %}
+
+        <div class="v15_27">
+            <form id="signup-form" action="{{url_for("submit_form")}}" method="post" onsubmit="return validateAndSignup()">
+                <div class="v15_31"></div>
+                <div class="v15_32"></div>
+                <span class="v15_35">Sign up</span>
+                <span class="v15_36">Enter your details</span>
+                <input type="text" name = name class="v15_37" placeholder="Name" required>
+                <input type="text" name="doj" onfocus="(this.type='date')" class="v36_460" onblur="(this.type='text')" placeholder="Joining date">
+                <input type="text" name = father-name class="v36_463" placeholder="Father’s Name" required>
+                <input type="text" name = mother-name class="v36_464" placeholder="Mother’s Name" required>
+                <input type="text" name = city class="v48_641" placeholder="City" required>
+                <input type="text" name="dob" onfocus="(this.type='date')" class="v48_642" onblur="(this.type='text')" placeholder="DOB" required>
+                <input type="tel"  name = mobile-number  class="v36_467" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+                <select name="ans" class="drop_down"  required>
+                    <option value="" disabled selected hidden>Are you Married?</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                </select>
+                <input type="text" name = email class="v48_646" placeholder="Email-Id" required>
+                {% if error_message %}
+                <p class="message">{{ error_message }}</p>
+                {% endif %}
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="name"></div>
+                <div class="v15_45"></div>
+            <input type ="submit" class="v15_45"  value = "Submit" >
+            <div class="v19_66"></div>
+            <div class="v19_68"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="v51_652"></div>
+
+        </form>
+        <script>
+            document.getElementById('maritalStatus').addEventListener('change', function() {
+                var selectedOption = this.options[this.selectedIndex];
+                
+                if (selectedOption.value === '') {
+                    // If the placeholder is selected, reset the dropdown to its initial state
+                    this.options[0].disabled = true;
+                    this.selectedIndex = -1;
+                } else {
+                    // If a valid option is selected, hide the placeholder
+                    this.options[0].style.display = 'none';
+                }
+            });
+        </script>
+        </div>
+    </body>
+    </html>
